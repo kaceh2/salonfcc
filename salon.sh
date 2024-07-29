@@ -14,7 +14,7 @@ MAIN_MENU() {
   done 
   
   read SERVICE_ID_SELECTED #Guarda la opción seleccionada
-  if [[ ! $SERVICE_ID_SELECTED =~ ^[0-5]+$ ]] # Si la opción no es un numero del 1 al 5  
+  if [[ ! $SERVICE_ID_SELECTED =~ ^[1-5]+$ ]] # Si la opción no es un numero del 1 al 5  
   then
     MAIN_MENU "I could not find that service. What would you like today?"
   else
